@@ -9,6 +9,8 @@ def main():
     bg_img = pg.image.load("ex01-20230613/fig/pg_bg.jpg")
     koukaton = pg.image.load("ex01-20230613/fig/3.png")
     kk_img = pg.transform.flip(koukaton, True, False)
+    kk_img2 = pg.transform.rotozoom(koukaton, 10, 1.0)
+    kk_list = [kk_img,kk_img2]
     tmr = 0
     while True:
         for event in pg.event.get():
